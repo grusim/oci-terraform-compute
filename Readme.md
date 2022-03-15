@@ -4,9 +4,9 @@ With the provided Terraform scripts you can quickly spin up a desired number of 
 
 The setup will also create a new Compartment and the needed Networking resources like VCN with default DHCP options, Subnet, Default Routing Table, Internet Gateway and Security list.
 
-For your particular use case you might want to change the Security list in [`network.tf`](network.tf). Since we're use it in this example to bring up some Tor Bridges to cirumvent censorship – as currently seen in Russia – the file holds the needed configuration for this.
+For your particular use case you might want to change the Security list in [`network.tf`](network.tf). Since we're using it in this example to bring up some Tor Bridges to circumvent censorship – as currently seen in Russia – the file holds the needed configuration for this.
 
-:information_source: | After bringing up the instances with this Terraform scripts you can e.g. use the [Tor-OBFS4-Bridge-Ansible-Playbook](Censorship](https://github.com/cyb3rwr3ck/Tor-OBFS4-Bridge-Ansible-Playbook)) to configure and start the bridge(s).
+:information_source: | After bringing up the instances with this Terraform scripts you can e.g. use the [Tor-OBFS4-Bridge-Ansible-Playbook](https://github.com/cyb3rwr3ck/Tor-OBFS4-Bridge-Ansible-Playbook) to configure and start the bridge(s).
 :---: | :---
 
 
