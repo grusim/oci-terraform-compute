@@ -1,5 +1,5 @@
 resource "oci_core_instance" "arm_instances" {
-  count = 6
+  count = var.number_of_instances
   agent_config {
     is_management_disabled = "false"
     is_monitoring_disabled = "false"

@@ -24,11 +24,13 @@ security_list_egress_security_rules_stateless        = false
 
 security_list_ingress_security_rules_destination = "0.0.0.0/0"
 
-ssh_key_path = "~/.ssh/<id_the_public_key>.pub"
-
+# machine configs
+number_of_intances             = 6
+ssh_key_path                   = "~/.ssh/<id_the_public_key>.pub"
 image_operating_system         = "Canonical Ubuntu"
 image_operating_system_version = "20.04"
+instance_shape                 = "VM.Standard.A1.Flex"
 
-instance_shape        = "VM.Standard.A1.Flex"
+# instance name
 instance_display_name = "tor-bridge"
 counter_offset        = 0

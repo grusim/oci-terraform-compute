@@ -26,11 +26,12 @@ variable "security_list_egress_security_rules_stateless" {}
 variable "security_list_ingress_security_rules_destination" {}
 
 # machine configs
+variable "number_of_instances" {}
 variable "ssh_key_path" {}
 variable "image_operating_system" {}
 variable "image_operating_system_version" {}
+variable "instance_shape" {}
 
 # instance name
-variable "instance_shape" {}
 variable "instance_display_name" {}
 variable "counter_offset" {}
