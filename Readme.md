@@ -25,7 +25,7 @@ Replace at least all variable values in \<braces\>
 - `config_file_profile` is a session value inside the `~/.oci/config` file - we use this because this deployment won't take longer than 1 hour
 - `default_compartment_id` - use the `tenancy_ocid` here again unless you want to have the generated department nested under an existing one besides your root compartment
 - generate a new ssh key pair and provide the path to the public key as value to the `ssh_key_path` variable
-- `number_of_intances` - the count of instances to provision
+- `number_of_instances` - the count of instances to provision
 - (optional) you can provide a `counter_offset` to start creating your instances with higher number display names
 
 :exclamation: | You might need to change the `AD` variable if you're using the Oracle free tier. To find out which one of the usually three availability domains is the one that says "Always Free Eligible" just click on "Create a VM instance" in the Oracle Cloud Console and have a look under "Placement". If it says "AD 1" there for example, the AD variable has to be set to "0" - yes programmers are weird that way ;-)
